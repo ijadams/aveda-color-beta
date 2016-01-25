@@ -8507,3 +8507,141 @@ th.hide-for-touch {
   }
 }
 /* all app scss styles here */
+body {
+  font: 100% ff-meta-web-pro, sans-serif;
+  color: #826967 !important;
+  font-family: "ff-meta-web-pro";
+}
+body h1, body h2, body h3, body h4, body p {
+  font-family: "ff-meta-web-pro";
+}
+body h1 {
+  font-size: 80px;
+  line-height: 0.75em;
+}
+
+main {
+  padding-top: 7%;
+}
+
+body.home {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: top;
+  font: 100% ff-meta-web-pro, sans-serif;
+  color: #826967 !important;
+  font-family: "ff-meta-web-pro";
+}
+body.home h1, body.home h2, body.home h3, body.home h4, body.home p {
+  font-family: "ff-meta-web-pro";
+  color: #826967 !important;
+}
+body.home h1 {
+  font-size: 80px;
+  line-height: 0.75em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+ul.locations li:first-child {
+  margin-right: 0.5rem;
+}
+
+a.button {
+  font-family: ff-meta-web-pro, sans-serif;
+  font-weight: 400;
+  background: #826967;
+  color: white;
+  border-radius: 5px;
+  font-weight: 100;
+  text-align: center;
+  width: 200px;
+  padding: 10px 20px;
+}
+a.button:hover {
+  background-color: #442523 !important;
+}
+
+#aveda-logo {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+#intro {
+  padding-top: 5%;
+}
+
+/* SALON DETAILS */
+section.location-details h2 {
+  color: #826967;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+section.location-details p a {
+  color: #826967;
+}
+section.location-details p a:hover {
+  color: #442523;
+}
+
+i.fa-chevron-left {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 3px;
+  width: 27px;
+  margin-right: 0px;
+  padding-left: 4px;
+  margin-right: 10px;
+  transition: .5s;
+}
+i.fa-chevron-left:hover {
+  background: rgba(200, 200, 200, 0.6);
+}
+
+.top-bar {
+  background: #826967;
+}
+
+.top-bar .title-area {
+  max-height: 100%;
+}
+
+.nav-container {
+  margin: 0 3%;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    line-height: 1em;
+  }
+
+  ul.locations li:first-child {
+    margin-right: 0;
+  }
+
+  #intro {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  #aveda-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: inherit;
+    text-align: center;
+  }
+}
