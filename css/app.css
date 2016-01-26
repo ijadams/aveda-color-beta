@@ -8524,6 +8524,10 @@ main {
   padding: 5% 0;
 }
 
+body.salon-details main {
+  padding: 5% 0 0 0;
+}
+
 body.home {
   background: url(../images/bg.jpg);
   background-size: cover;
@@ -8650,9 +8654,29 @@ div#bx-pager img {
 section.location-map {
   background: url(../images/location-footer-bg.jpg);
   padding-top: 6rem;
+  padding-bottom: 3rem;
 }
-section.location-map iframe {
-  border: 1px solid #826967;
+section.location-map #map {
+  border: 2px solid #826967 !important;
+  height: 450px;
+  width: 100%;
+}
+section.location-map .gm-style-iw * {
+  display: block;
+  width: 100%;
+}
+section.location-map .gm-style-iw h4, section.location-map .gm-style-iw p {
+  margin: 0;
+  padding: 0;
+}
+section.location-map a.map-button {
+  background: #826967;
+  width: 45%;
+  text-align: center;
+  padding: 5px 10px;
+  color: white;
+  margin-right: 10%;
+  float: right;
 }
 
 .reviews h2 {
@@ -8676,10 +8700,18 @@ section.location-map iframe {
   color: #826967;
 }
 .interior-hero .row {
-  padding-top: 2rem;
+  padding-top: 10vh;
 }
-.interior-hero .hero-text h1, .interior-hero h2 {
-  color: #ecf0f1 !important;
+.interior-hero .hero-text {
+  position: relative;
+}
+.interior-hero .hero-text h1, .interior-hero .hero-text h2 {
+  color: #ebe4e1 !important;
+}
+@media only screen and (min-width: 64.063em) {
+  .interior-hero .hero-text h1, .interior-hero .hero-text h2 {
+    margin-left: -5rem;
+  }
 }
 .interior-hero:before {
   position: absolute;
@@ -8710,6 +8742,17 @@ section.location-map iframe {
   color: #7f8c8d;
 }
 
+/* hide nav */
+.top-bar .toggle-topbar.menu-icon a {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+}
 @media screen and (max-width: 480px) {
   h1 {
     line-height: 1em;
