@@ -8521,7 +8521,7 @@ body h1 {
 }
 
 main {
-  padding-top: 7%;
+  padding: 5% 0;
 }
 
 body.home {
@@ -8569,6 +8569,10 @@ a.button:hover {
   background-color: #442523 !important;
 }
 
+.black {
+  color: black;
+}
+
 #aveda-logo {
   position: absolute;
   top: 5%;
@@ -8580,6 +8584,9 @@ a.button:hover {
 }
 
 /* SALON DETAILS */
+section.location-details {
+  padding-bottom: 7rem;
+}
 section.location-details h2 {
   color: #826967;
   text-transform: uppercase;
@@ -8618,6 +8625,89 @@ i.fa-chevron-left:hover {
 .nav-container {
   margin: 0 3%;
   height: 100%;
+}
+
+/* slider styling */
+.bx-wrapper img {
+  width: 100%;
+}
+.bx-wrapper .bx-controls-direction a {
+  top: inherit;
+  bottom: 5%;
+  top: inherit !important;
+}
+
+div#bx-pager {
+  text-align: center;
+  margin: 0 auto;
+}
+div#bx-pager img {
+  max-width: 90px;
+  border: 1px solid #826967;
+  margin-bottom: 0.5rem;
+}
+
+section.location-map {
+  background: url(../images/location-footer-bg.jpg);
+  padding-top: 6rem;
+}
+section.location-map iframe {
+  border: 1px solid #826967;
+}
+
+.reviews h2 {
+  color: #826967;
+  padding-bottom: 1rem;
+}
+.reviews h3 {
+  color: #826967;
+}
+.reviews i {
+  font-size: 4em;
+}
+
+/* AVEDA COLOR STYLING */
+.interior-hero {
+  background: url(../images/interior-header.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 45vh;
+  color: #826967;
+}
+.interior-hero .row {
+  padding-top: 2rem;
+}
+.interior-hero .hero-text h1, .interior-hero h2 {
+  color: #ecf0f1 !important;
+}
+.interior-hero:before {
+  position: absolute;
+  width: 46%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 20px solid white;
+  border-right: 20px solid transparent;
+  display: block;
+  content: " ";
+}
+.interior-hero:after {
+  position: absolute;
+  left: 46%;
+  bottom: 0;
+  right: 0;
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+  display: block;
+  content: " ";
+}
+
+.content h2 {
+  color: #826967;
+  text-transform: uppercase;
+}
+.content p {
+  color: #7f8c8d;
 }
 
 @media screen and (max-width: 480px) {
