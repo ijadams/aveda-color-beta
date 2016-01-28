@@ -1,5 +1,3 @@
-/* jshint ignore:start */
-
 'use strict';
 
 var app = (function(document, $) {
@@ -9,16 +7,12 @@ var app = (function(document, $) {
 		},
 		_init = function() {
 			$(document).foundation();
-            // needed to use joyride
-            // doc: http://foundation.zurb.com/docs/components/joyride.html
-            $(document).on('click', '#start-jr', function () {
-                $(document).foundation('joyride', 'start');
-            });
 			_userAgentInit();
 		};
 	return {
 		init: _init
 	};
+
 })(document, jQuery);
 
 (function() {
@@ -26,4 +20,11 @@ var app = (function(document, $) {
 })();
 
 
-/* jshint ignore:end */
+
+
+
+$(function() {
+  $(".left-off-canvas-toggle, .exit-off-canvas").click(function() {
+        $('#locations i').toggleClass("rotated");
+    });
+});
