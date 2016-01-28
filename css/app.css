@@ -8618,22 +8618,6 @@ i.fa-chevron-left:hover {
   background: rgba(200, 200, 200, 0.6);
 }
 
-.top-bar {
-  background: #826967;
-}
-.top-bar .nav-container {
-  margin: 0 3%;
-  height: 100%;
-}
-.top-bar .title-area {
-  max-height: 100%;
-}
-@media screen and (max-width: 768px) {
-  .top-bar .title-area .title-area h1 a {
-    width: 100%;
-  }
-}
-
 /* slider styling */
 .bx-wrapper img {
   width: 100%;
@@ -8747,7 +8731,54 @@ section.location-map a.map-button {
   color: #7f8c8d;
 }
 
-/* hide nav */
+@media screen and (max-width: 768px) {
+  table {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    line-height: 1em;
+  }
+
+  ul.locations li:first-child {
+    margin-right: 0;
+  }
+
+  #intro {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  #aveda-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: inherit;
+    text-align: center;
+  }
+}
+/* nav styling */
+.top-bar {
+  background: #826967;
+}
+.top-bar .nav-container {
+  margin: 0 3%;
+  height: 100%;
+}
+.top-bar .title-area {
+  max-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .top-bar .title-area .title-area h1 a {
+    width: 100%;
+  }
+}
+
 .top-bar .toggle-topbar.menu-icon a {
   display: none;
 }
@@ -8848,11 +8879,6 @@ section.location-map a.map-button {
 }
 
 @media screen and (max-width: 768px) {
-  table {
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
-
   .left-off-canvas-menu {
     width: 100%;
   }
@@ -8867,30 +8893,5 @@ section.location-map a.map-button {
   .move-right > .inner-wrap {
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
-  }
-}
-@media screen and (max-width: 480px) {
-  h1 {
-    line-height: 1em;
-  }
-
-  ul.locations li:first-child {
-    margin-right: 0;
-  }
-
-  #intro {
-    height: 100%;
-    background: rgba(255, 255, 255, 0.6);
-  }
-
-  #aveda-logo {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: inherit;
-    text-align: center;
   }
 }
