@@ -135,7 +135,9 @@ div#bx-pager {
 }
 
 section.location-map {
-	background: url(../images/location-footer-bg.jpg);
+	background: url(../images/location-footer-bg.jpg) no-repeat;
+	background-size:cover;
+	background-position:center;
 	padding-top: 6rem;
 	padding-bottom:3rem;
 	#map {border:2px solid $primarycolor !important;height:450px;width:100%;}

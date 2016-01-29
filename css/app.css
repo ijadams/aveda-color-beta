@@ -8677,7 +8677,9 @@ div#bx-pager img {
 }
 
 section.location-map {
-  background: url(../images/location-footer-bg.jpg);
+  background: url(../images/location-footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 6rem;
   padding-bottom: 3rem;
 }
@@ -8884,7 +8886,7 @@ section.location-map a.map-button {
 }
 .left-off-canvas-menu .social {
   padding-left: 0.8rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 .left-off-canvas-menu .social li {
   margin-left: 1.1rem;
@@ -8925,6 +8927,8 @@ section.location-map a.map-button {
 #D3cpWidget,
 .d3cp_feature_wrap,
 .d3cp_review_main {
+  max-height: 470px !important;
+  overflow: scroll !important;
   width: 100% !important;
   margin-left: 0 !important;
   background: transparent !important;
