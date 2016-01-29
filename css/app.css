@@ -393,6 +393,43 @@ th {
   padding: 0;
 }
 
+/* Reviews */
+#D3cpWidget,
+.d3cp_feature_wrap,
+.d3cp_review_main {
+  width: 100% !important;
+  margin-left: 0 !important;
+  background: transparent !important;
+  box-sizing: border-box;
+  font-family: 'brandon-grotesque', sans-serif !important;
+}
+
+.d3cp_itemized_box,
+.d3cp_review_pic,
+.d3cp_review_seal_wrap {
+  display: none !important;
+}
+
+.d3cp_feature_wrap {
+  padding: 0 !important;
+}
+
+.d3cp_review_box {
+  margin: 0 !important;
+  overflow: initial !important;
+}
+
+.d3cp_review_content {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.d3cp_review_bizcomment {
+  margin: 10px 0 20px !important;
+  color: #658732 !important;
+  border-left: 2px solid #658732 !important;
+}
+
 meta.foundation-version {
   font-family: "/5.5.3/";
 }
@@ -8634,6 +8671,7 @@ div#bx-pager {
 }
 div#bx-pager img {
   max-width: 90px;
+  max-height: 60px;
   border: 1px solid #826967;
   margin-bottom: 0.5rem;
 }
@@ -8822,6 +8860,11 @@ section.location-map a.map-button {
   text-transform: capitalize;
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .left-off-canvas-menu .side-nav.main li a:not(.button) {
+    font-size: 1.8em;
+  }
+}
 .left-off-canvas-menu .side-nav.main li a:not(.button) .is-active, .left-off-canvas-menu .side-nav.main li a:not(.button):hover {
   color: #f1f3f3;
   background: transparent;
@@ -8876,6 +8919,43 @@ section.location-map a.map-button {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* Reviews */
+#D3cpWidget,
+.d3cp_feature_wrap,
+.d3cp_review_main {
+  width: 100% !important;
+  margin-left: 0 !important;
+  background: transparent !important;
+  box-sizing: border-box;
+  font-family: 'brandon-grotesque', sans-serif !important;
+}
+
+.d3cp_itemized_box,
+.d3cp_review_pic,
+.d3cp_review_seal_wrap {
+  display: none !important;
+}
+
+.d3cp_feature_wrap {
+  padding: 0 !important;
+}
+
+.d3cp_review_box {
+  margin: 0 !important;
+  overflow: initial !important;
+}
+
+.d3cp_review_content {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.d3cp_review_bizcomment {
+  margin: 10px 0 20px !important;
+  color: #658732 !important;
+  border-left: 2px solid #658732 !important;
 }
 
 @media screen and (max-width: 768px) {

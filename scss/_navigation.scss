@@ -68,6 +68,9 @@ $break-medium: 768px;
     color: $dark_red;
     text-transform: capitalize;
     display: block;
+    @media screen and (max-width:768px) {
+    	font-size: 1.8em;
+    }
     .is-active, &:hover {
       color: #f1f3f3;
       background: transparent;
@@ -118,6 +121,34 @@ $break-medium: 768px;
 
 .rotated {-webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-ms-transform: rotate(-90deg);-o-transform: rotate(-90deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
 
+
+/* Reviews */
+#D3cpWidget,
+.d3cp_feature_wrap,
+.d3cp_review_main {
+ width: 100% !important;
+ margin-left: 0 !important;
+ background: transparent !important;
+ box-sizing: border-box;
+ font-family: 'brandon-grotesque', sans-serif !important;
+ }
+.d3cp_itemized_box,
+.d3cp_review_pic,
+.d3cp_review_seal_wrap { display: none !important; }
+.d3cp_feature_wrap { padding: 0 !important; }
+.d3cp_review_box {
+   margin: 0 !important;
+   overflow: initial !important;
+}
+.d3cp_review_content {
+   font-size: 1rem !important;
+   line-height: 1.5rem !important;
+}
+.d3cp_review_bizcomment {
+   margin: 10px 0 20px !important;
+   color: #658732 !important;
+   border-left: 2px solid #658732 !important;
+}
 
 @media screen and (max-width:768px) {
 	.left-off-canvas-menu {

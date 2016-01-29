@@ -1,6 +1,6 @@
 /* jshint ignore:start */
 google.maps.event.addDomListener(window, 'load', init);
-var myCenter = new google.maps.LatLng(29.926715, -90.107753);
+var myCenter = new google.maps.LatLng(29.988091, -90.132022);
 
 var map = null;
 var marker = null;
@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Paris Parker Prytania', '4900 Prytania St. <br>New Orleans, LA 70115', '504.891.8874', 'undefined', 'undefined', 29.9510658, -90.0715323, '../images/map-marker.png']
+        ['Keith Noonan Salon', '800 Metairie Road, Suite O <br>Metairie, LA 70005', '504.482.1866', 'undefined', 'undefined', 29.988091, -90.132022, '../images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {
@@ -185,7 +185,7 @@ function init() {
                 iw.close();
                 infoWindowVisible(false);
             } else {
-                var html = "<div style='color:#000;background-color:#fff;padding:5px;;'><div style='float: left;width:46%;padding-right:15px;'><img src='http://placehold.it/250x250.jpg'></div><h4>" + title + "</h4><p>" + desc + "<p><p>" + telephone + "<a class='map-button' href='http://parisparker.com/'>BOOK NOW</a><p><a href='" + link + "'' >" + web + "</a></div>";
+                var html = "<div style='color:#000;background-color:#fff;padding:5px;;'><div style='float: left;width:46%;padding-right:15px;'><img src='../../images/noonan/3.jpg'></div><h4>" + title + "</h4><p>" + desc + "<p><p>" + telephone + "<a class='map-button' href='http://keithnoonansalon.net/appointments.php'>BOOK NOW</a><p><a href='" + link + "'' >" + web + "</a></div>";
                 iw = new google.maps.InfoWindow({
                     content: html
                 });

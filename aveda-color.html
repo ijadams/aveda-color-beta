@@ -46,23 +46,23 @@
             <!-- Off Canvas Menu -->
             <aside class="left-off-canvas-menu">
                 <div class="container small-text-center medium-text-center large-text-left">
-                <ul class="side-nav main">
-                  <li><a href="#">New Orleans</a></li>
+                 <ul class="side-nav main">
+                  <li><a href="#">Our New Orleans</a></li>
                   <li><a href="#">Locations</a></li>
                 </ul>
                 <ul class="side-nav secondary">
-                  <li><a href="#">Paris Parker Prytania</a></li>
-                  <li><a href="#">Paris Parker Canal</a></li>
-                  <li><a href="#">Magazine</a></li>
-                  <li><a href="#">Paris Parker Lakeside</a></li>
-                  <li><a href="#">Keith Noonan</a></li>
-                  <li><a href="#">Salon Diversions</a></li>
+                  <li><a href="prytania.html">Paris Parker Prytania</a></li>
+                  <li><a href="canal.html">Paris Parker Canal</a></li>
+                  <li><a href="magazine.html">Magazine</a></li>
+                  <li><a href="lakeside.html">Paris Parker Lakeside</a></li>
+                  <li><a href="keith-noonan.html">Keith Noonan</a></li>
+                  <li><a href="salon-diversions.html">Salon Diversions</a></li>
                 </ul>
                 <ul class="inline-list social">
-                  <li><i class="fa fa-facebook"></i></li>
-                  <li><i class="fa fa-pinterest"></i></li>
-                  <li><i class="fa fa-youtube"></i></li>
-                  <li><i class="fa fa-twitter"></i></li>
+                  <li><a href="https://www.facebook.com/Aveda/"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.youtube.com/user/aveda"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="https://twitter.com/aveda"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/aveda/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 <ul>
                     <li><a style="color:white;font-size:1.618em;" class="left-off-canvas-toggle hide-for-large-up text-center">Close X</a></li>
@@ -161,6 +161,12 @@
       $('.bxslider').bxSlider({
         pagerCustom:'#bx-pager'
       });
+    });
+
+    $(function() {
+      $(".left-off-canvas-toggle, .exit-off-canvas").click(function() {
+            $('#locations i').toggleClass("rotated");
+        });
     });
     </script>
   </body>

@@ -22,9 +22,10 @@ var app = (function(document, $) {
 
 
 
-
+/*
 $(function() {
   $(".left-off-canvas-toggle, .exit-off-canvas").click(function() {
         $('#locations i').toggleClass("rotated");
     });
 });
+*/

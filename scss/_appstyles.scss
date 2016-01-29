@@ -131,7 +131,7 @@ i.fa-chevron-left {
 div#bx-pager {
 	text-align: center;
 	margin:0 auto;
-	img {max-width: 90px;border: 1px solid $primarycolor;margin-bottom: 0.5rem;}
+	img {max-width: 90px;max-height:60px;border: 1px solid $primarycolor;margin-bottom: 0.5rem;}
 }
 
 section.location-map {
