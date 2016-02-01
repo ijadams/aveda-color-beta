@@ -8601,11 +8601,27 @@ a.button {
   border-radius: 5px;
   text-align: center;
   padding: 10px 40px;
-  font-size: 1.3rem;
+  font-size: 1.3;
   letter-spacing: 2px;
 }
 a.button:hover {
   background-color: #442523 !important;
+}
+
+body.location-details a.button {
+  font-size: 1;
+  letter-spacing: 0;
+}
+
+table {
+  background: none;
+  border: none;
+}
+table tbody tr td, table table tr td {
+  padding-left: 0;
+}
+table tr:nth-of-type(even) {
+  background-color: transparent !important;
 }
 
 .black {
@@ -8797,7 +8813,9 @@ div#bx-pager img {
 }
 
 section.location-map {
-  background: url(../images/location-footer-bg.jpg) no-repeat cover;
+  background: url(../images/location-footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 6rem;
   padding-bottom: 3rem;
 }
@@ -8834,7 +8852,7 @@ section.location-map a.map-button {
   color: #826967;
 }
 .reviews i {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 /* AVEDA COLOR STYLING */

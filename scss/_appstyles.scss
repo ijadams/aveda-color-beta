@@ -62,12 +62,29 @@ a.button {
 	border-radius: 5px;
 	text-align: center;
 	padding: 10px 40px;
-	font-size: 1.3rem;
+	font-size: 1.3;
 	letter-spacing: 2px;
     &:hover {
       background-color: $dark_red !important;
     }
 }
+
+body.location-details a.button {
+	font-size: 1;
+	letter-spacing:0;
+}
+
+table {
+	background:none;
+	border:none;
+	tbody tr td, table tr td {padding-left:0;}
+
+	tr:nth-of-type(even) {
+    background-color: transparent !important;
+	}
+}
+
+
 
 .black {color: black;}
 
@@ -228,7 +245,9 @@ div#bx-pager {
 }
 
 section.location-map {
-	background: url(../images/location-footer-bg.jpg) no-repeat cover;
+	background: url(../images/location-footer-bg.jpg) no-repeat;
+	background-size:cover;
+	background-position:center;
 	padding-top: 6rem;
 	padding-bottom:3rem;
 	#map {border:2px solid $primarycolor !important;height:450px;width:100%;}
@@ -258,7 +277,7 @@ section.location-map {
 .reviews {
 	h2 {color: $primarycolor;padding-bottom: 1rem;}
 	h3 {color: $primarycolor;}
-	i {font-size: 4em;}
+	i {font-size: 3em;}
 }
 
 /* AVEDA COLOR STYLING */
