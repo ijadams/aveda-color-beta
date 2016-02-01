@@ -19,7 +19,7 @@ $break-small: 480px;
 $break-medium: 768px;
 
 body {
-	background-color: $bodybg;
+	background-color: white;
 	font: 100% $fontstack;
 	color: $primarycolor !important;
 	font-family: "ff-meta-web-pro";
@@ -228,7 +228,7 @@ div#bx-pager {
 }
 
 section.location-map {
-	background: url(../images/location-footer-bg.jpg);
+	background: url(../images/location-footer-bg.jpg) no-repeat cover;
 	padding-top: 6rem;
 	padding-bottom:3rem;
 	#map {border:2px solid $primarycolor !important;height:450px;width:100%;}

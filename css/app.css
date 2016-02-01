@@ -8545,6 +8545,7 @@ th.hide-for-touch {
 }
 /* all app scss styles here */
 body {
+  background-color: white;
   font: 100% ff-meta-web-pro, sans-serif;
   color: #826967 !important;
   font-family: "ff-meta-web-pro";
@@ -8566,7 +8567,6 @@ body.salon-details main {
 }
 
 body.home {
-  background-color: #f6f6f6;
   font: 100% ff-meta-web-pro, sans-serif;
   color: #826967 !important;
   font-family: "ff-meta-web-pro";
@@ -8620,7 +8620,10 @@ a.button:hover {
 
 #intro {
   min-height: 500px;
-  background: #dbe0e4 url(../images/intro-bg.jpg) top left no-repeat;
+  background-image: url(../images/intro-bg.jpg);
+  background-color: #dbe0e4;
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 #intro .row {
   padding-top: 130px;
@@ -8643,12 +8646,21 @@ a.button:hover {
 }
 @media only screen and (max-width: 64em) {
   #intro {
-    background-position: -160px top;
+    background-position: -150px top;
+  }
+  #intro .row h1 {
+    font-size: 4rem;
+  }
+  #intro .row h2 {
+    font-size: 2.5rem;
+    line-height: 2rem;
   }
 }
 @media only screen and (max-width: 40em) {
   #intro {
-    background-image: none;
+    padding-bottom: 400px;
+    background-size: initial;
+    background-position: 17% 300px;
     min-height: 0;
   }
   #intro #aveda-logo {
@@ -8661,11 +8673,18 @@ a.button:hover {
     text-align: center;
   }
   #intro .row h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   #intro .row h2 {
     font-size: 2rem;
+    line-height: 1rem;
+  }
+  #intro .row h3 {
+    font-size: 1.5rem;
+  }
+  #intro .row h4 {
+    font-size: 0.9rem;
   }
 }
 
@@ -8778,9 +8797,7 @@ div#bx-pager img {
 }
 
 section.location-map {
-  background: url(../images/location-footer-bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(../images/location-footer-bg.jpg) no-repeat cover;
   padding-top: 6rem;
   padding-bottom: 3rem;
 }
@@ -8869,8 +8886,23 @@ section.location-map a.map-button {
   display: none;
 }
 @media only screen and (max-width: 64.063em) {
+  .interior-hero.location h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .interior-hero.location h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .interior-hero.location h4 {
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 40.063em) {
   .interior-hero.location {
-    background-image: none;
+    padding-bottom: 350px;
+    background-size: initial;
+    background-position: 65% 170%;
   }
   .interior-hero.location #aveda-logo {
     position: static;
@@ -8949,6 +8981,7 @@ section.location-map a.map-button {
   border-radius: 0;
   padding: 10px 0;
   letter-spacing: 0;
+  color: #fff;
 }
 .content.location .row li .block .button:first-of-type {
   background: #dcdcdc;
