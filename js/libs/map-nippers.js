@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Jon Alan Salon - Nippers Corner', '15556 Old Hickory Blvd. <br>Nashville, TN 37211', '615.331.9800', 'undefined', 'undefined', 36.040121, -86.741891 , '../images/map-marker.png']
+        ['Jon Alan Salon - Nippers Corner', '15556 Old Hickory Blvd. <br>Nashville, TN 37211', '615.331.9800', 'undefined', 'undefined', 36.040121, -86.741891 , 'http://haircoloroffer.com/staging/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

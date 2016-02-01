@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Salon Diversions', '838 Royal St, Suite O <br>New Orleans, LA 70116', '504-299-0040', 'undefined', 'undefined', 29.959564, -90.063393 , '../images/map-marker.png']
+        ['Salon Diversions', '838 Royal St, Suite O <br>New Orleans, LA 70116', '504-299-0040', 'undefined', 'undefined', 29.959564, -90.063393 , 'http://haircoloroffer.com/staging/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

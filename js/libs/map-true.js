@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['True Blue Salon', '2817 West End Ave., Ste 109 <br>Nashville, TN 37203', '615.329.4454', 'undefined', 'undefined', 36.144532, -86.812228, '../images/map-marker.png']
+        ['True Blue Salon', '2817 West End Ave., Ste 109 <br>Nashville, TN 37203', '615.329.4454', 'undefined', 'undefined', 36.144532, -86.812228, 'http://haircoloroffer.com/staging/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Origina Salon Spa', '443 Cool Springs Blvd. Suite 105 <br>Franklin, TN 37067', '615.771.9005', 'undefined', 'undefined', 35.946463, -86.824927 , '../images/map-marker.png']
+        ['Origina Salon Spa', '443 Cool Springs Blvd. Suite 105 <br>Franklin, TN 37067', '615.771.9005', 'undefined', 'undefined', 35.946463, -86.824927 , 'http://haircoloroffer.com/staging/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

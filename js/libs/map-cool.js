@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Jon Alan Salon - Cool Springs', '2000 Meridian Blvd. STE 104  <br>Franklin, TN 37065', '615.771.6400', 'undefined', 'undefined', 35.951657, -86.807713, '../images/map-marker.png']
+        ['Jon Alan Salon - Cool Springs', '2000 Meridian Blvd. STE 104  <br>Franklin, TN 37065', '615.771.6400', 'undefined', 'undefined', 35.951657, -86.807713, 'http://haircoloroffer.com/staging/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

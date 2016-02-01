@@ -8562,6 +8562,10 @@ main {
   padding: 5% 0;
 }
 
+body.salon-details {
+  background-color: white;
+}
+
 body.salon-details main {
   padding: 5% 0 0 0;
 }

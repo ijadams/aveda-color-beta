@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Onu Salon', '2615 Medical Center Parkway, #2065 <br>Murfreesboro, TN 37129', '615.900.3377', 'undefined', 'undefined', 35.858430, -86.444595, '../images/map-marker.png']
+        ['Onu Salon', '2615 Medical Center Parkway, #2065 <br>Murfreesboro, TN 37129', '615.900.3377', 'undefined', 'undefined', 35.858430, -86.444595, 'http://haircoloroffer.com/staging/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {
