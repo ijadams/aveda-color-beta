@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Paris Parker Prytania', '4900 Prytania St. <br>New Orleans, LA 70115', '504.891.8874', 'undefined', 'undefined', 29.9510658, -90.0715323, 'http://haircoloroffer.com/staging/images/map-marker.png']
+        ['Paris Parker Prytania', '4900 Prytania St. <br>New Orleans, LA 70115', '504.891.8874', 'undefined', 'undefined', 29.9510658, -90.0715323, 'http://haircoloroffer.com/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Paris Parker Lakeside', '3301 Veterans Memorial Blvd. <br>Metairie, LA 70002', '504.846.5256', 'undefined', 'undefined', 30.005426, -90.158630, 'http://haircoloroffer.com/staging/images/map-marker.png']
+        ['Paris Parker Lakeside', '3301 Veterans Memorial Blvd. <br>Metairie, LA 70002', '504.846.5256', 'undefined', 'undefined', 30.005426, -90.158630, 'http://haircoloroffer.com/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

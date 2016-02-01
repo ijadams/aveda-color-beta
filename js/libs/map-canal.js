@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Paris Parker Canal', '333 Canal St. <br>New Orleans, LA 70130', '504.568.1124', 'undefined', 'undefined', 29.951753, -90.064995, 'http://haircoloroffer.com/staging/images/map-marker.png']
+        ['Paris Parker Canal', '333 Canal St. <br>New Orleans, LA 70130', '504.568.1124', 'undefined', 'undefined', 29.951753, -90.064995, 'http://haircoloroffer.com/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

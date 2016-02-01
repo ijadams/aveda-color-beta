@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Keith Noonan Salon', '800 Metairie Road, Suite O <br>Metairie, LA 70005', '504.482.1866', 'undefined', 'undefined', 29.988091, -90.132022, 'http://haircoloroffer.com/staging/images/map-marker.png']
+        ['Keith Noonan Salon', '800 Metairie Road, Suite O <br>Metairie, LA 70005', '504.482.1866', 'undefined', 'undefined', 29.988091, -90.132022, 'http://haircoloroffer.com/images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {
