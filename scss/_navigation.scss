@@ -126,6 +126,8 @@ $break-medium: 768px;
 #D3cpWidget,
 .d3cp_feature_wrap,
 .d3cp_review_main {
+max-height:470px;
+overflow:scroll;
  width: 100% !important;
  margin-left: 0 !important;
  background: transparent !important;

@@ -8545,7 +8545,6 @@ th.hide-for-touch {
 }
 /* all app scss styles here */
 body {
-  background-color: #f6f6f6;
   font: 100% ff-meta-web-pro, sans-serif;
   color: #826967 !important;
   font-family: "ff-meta-web-pro";
@@ -8567,6 +8566,7 @@ body.salon-details main {
 }
 
 body.home {
+  background-color: #f6f6f6;
   font: 100% ff-meta-web-pro, sans-serif;
   color: #826967 !important;
   font-family: "ff-meta-web-pro";
@@ -8778,7 +8778,9 @@ div#bx-pager img {
 }
 
 section.location-map {
-  background: url(../images/location-footer-bg.jpg);
+  background: url(../images/location-footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 6rem;
   padding-bottom: 3rem;
 }
@@ -9107,6 +9109,8 @@ section.location-map a.map-button {
 #D3cpWidget,
 .d3cp_feature_wrap,
 .d3cp_review_main {
+  max-height: 470px;
+  overflow: scroll;
   width: 100% !important;
   margin-left: 0 !important;
   background: transparent !important;
