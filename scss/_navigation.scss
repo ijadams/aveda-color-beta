@@ -123,6 +123,8 @@ $break-medium: 768px;
 
 
 /* Reviews */
+
+
 #D3cpWidget,
 .d3cp_feature_wrap,
 .d3cp_review_main {
@@ -150,6 +152,11 @@ $break-medium: 768px;
    margin: 10px 0 20px !important;
    color: #658732 !important;
    border-left: 2px solid #658732 !important;
+}
+
+#D3cpWidget {
+    background: rgba(255,255,255,0.8)! important;
+    padding: 10px 20px !important;
 }
 
 @media screen and (max-width:768px) {
