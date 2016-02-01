@@ -19,7 +19,7 @@ $break-small: 480px;
 $break-medium: 768px;
 
 body {
-	background-color: white;
+	background-color: $bodybg;
 	font: 100% $fontstack;
 	color: $primarycolor !important;
 	font-family: "ff-meta-web-pro";
@@ -33,7 +33,9 @@ body {
 main {
 	padding: 5% 0;
 }
+body.aveda-color {}
 
+body.salon-details {background-color: white;}
 body.salon-details main {padding: 5% 0 0 0;}
 
 body.home {
