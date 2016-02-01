@@ -19,6 +19,7 @@ $break-small: 480px;
 $break-medium: 768px;
 
 body {
+	background-color: $bodybg;
 	font: 100% $fontstack;
 	color: $primarycolor !important;
 	font-family: "ff-meta-web-pro";
@@ -36,7 +37,6 @@ main {
 body.salon-details main {padding: 5% 0 0 0;}
 
 body.home {
-	background-color: $bodybg;
 	font: 100% $fontstack;
 	color: $primarycolor !important;
 	font-family: "ff-meta-web-pro";
@@ -79,7 +79,10 @@ a.button {
 
 #intro {
 	min-height: 500px;
-	background: $introbg url(../images/intro-bg.jpg) top left no-repeat;
+	background-image: url(../images/intro-bg.jpg);
+	background-color: $introbg;
+	background-repeat: no-repeat;
+	background-position: top left;
 	.row {
 		padding-top: 130px;
 		h1 {
@@ -100,10 +103,16 @@ a.button {
 		}
 	}
 	@media only screen and (max-width: 64em) {
-		background-position: -160px top;
+	    background-position: -150px top;
+	    .row {
+	    	h1 { font-size: 4rem; }
+			h2 { font-size: 2.5rem; line-height: 2rem; }
+	    }
 	}
 	@media only screen and (max-width: 40em) {
-		background-image: none;
+	    padding-bottom: 400px;
+	    background-size: initial;
+	    background-position: 17% 300px;
 		min-height: 0;
 		#aveda-logo {
 			position: static;
@@ -113,8 +122,10 @@ a.button {
 		.row {
 			padding-top: 0;
 			text-align: center;
-			h1 { font-size: 4rem; line-height: 4rem; }
-			h2 { font-size: 2rem; }
+			h1 { font-size: 3rem; line-height: 3rem; }
+			h2 { font-size: 2rem; line-height: 1rem; }
+			h3 { font-size: 1.5rem; }
+			h4 { font-size: 0.9rem; }
 		}
 	}
 }
@@ -217,9 +228,8 @@ div#bx-pager {
 }
 
 section.location-map {
-	background: url(../images/location-footer-bg.jpg) no-repeat;
-	background-size:cover;
-	background-position:center;	padding-top: 6rem;
+	background: url(../images/location-footer-bg.jpg);
+	padding-top: 6rem;
 	padding-bottom:3rem;
 	#map {border:2px solid $primarycolor !important;height:450px;width:100%;}
     .gm-style-iw * {
@@ -290,7 +300,14 @@ section.location-map {
 		h2 { font-size: 3rem; margin-left: 0; }
 		&:before,&:after { display: none; }
 		@media only screen and (max-width: 64.063em) {
-			background-image: none;
+			h1 { font-size: 3rem; line-height: 3rem; }
+			h2 { font-size: 2rem; line-height: 2rem; }
+			h4 { line-height: normal; }
+		}
+		@media only screen and (max-width: 40.063em) {
+		    padding-bottom: 350px;
+		    background-size: initial;
+		    background-position: 65% 170%;
 			#aveda-logo {
 				position: static;
 				padding-top: 20px;
@@ -362,6 +379,7 @@ section.location-map {
 			    border-radius: 0;
 			    padding: 10px 0;
 			    letter-spacing: 0;
+			    color: #fff;
 			    &:first-of-type {
 			    	background: $buttonbgalt;
 			    	color: $asbestos;
