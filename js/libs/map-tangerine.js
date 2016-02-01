@@ -1,6 +1,6 @@
 /* jshint ignore:start */
 google.maps.event.addDomListener(window, 'load', init);
-var myCenter = new google.maps.LatLng(35.862169, -86.430042);
+var myCenter = new google.maps.LatLng(35.873884, -86.322294);
 
 var map = null;
 var marker = null;
@@ -123,7 +123,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Tangerine Salon', '845 N Thompson Ln  <br>Murfreesboro, TN 37129', '615.896.3302', 'undefined', 'undefined', 35.862169, -86.430042, '../images/map-marker.png']
+        ['Tangerine Salon', '845 N Thompson Ln  <br>Murfreesboro, TN 37129', '615.896.3302', 'undefined', 'undefined', 35.873884, -86.322294, '../images/map-marker.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {
