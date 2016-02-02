@@ -8562,6 +8562,12 @@ main {
   padding: 5% 0;
 }
 
+@media scren and (max-width: 40em) {
+  body.aveda-color main {
+    padding-top: 10%;
+  }
+}
+
 body.salon-details {
   background-color: white;
 }
@@ -8664,6 +8670,11 @@ table tr:nth-of-type(even) {
   font-weight: normal;
   text-transform: none;
 }
+@media only screen and (min-width: 768px) {
+  #intro span.bullet {
+    font-size: 1.1375rem;
+  }
+}
 @media only screen and (max-width: 64em) {
   #intro {
     background-position: -150px top;
@@ -8674,6 +8685,9 @@ table tr:nth-of-type(even) {
   #intro .row h2 {
     font-size: 2.5rem;
     line-height: 2rem;
+  }
+  #intro span.bullet {
+    font-size: 1.1375rem;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -8705,6 +8719,9 @@ table tr:nth-of-type(even) {
   }
   #intro .row h4 {
     font-size: 0.9rem;
+  }
+  #intro span.bullet {
+    font-size: 0.8rem;
   }
 }
 
@@ -8872,6 +8889,14 @@ section.location-map a.map-button {
 .interior-hero .row {
   padding-top: 10vh;
 }
+@media screen and (max-width: 40em) {
+  .interior-hero {
+    background-position: 33% 50%;
+  }
+  .interior-hero .row {
+    padding-top: 5vh;
+  }
+}
 .interior-hero .hero-text {
   position: relative;
 }
@@ -8891,6 +8916,11 @@ section.location-map a.map-button {
 .interior-hero.location .button {
   font-size: 1rem;
   letter-spacing: 1px;
+}
+@media only screen and (max-width: 40em) {
+  .interior-hero.location .button {
+    margin-top: 1rem;
+  }
 }
 .interior-hero.location h1, .interior-hero.location h2, .interior-hero.location h4 {
   line-height: 3rem;
@@ -8924,7 +8954,7 @@ section.location-map a.map-button {
   .interior-hero.location {
     padding-bottom: 350px;
     background-size: initial;
-    background-position: 65% 170%;
+    background-position: 65% 195%;
   }
   .interior-hero.location #aveda-logo {
     position: static;
@@ -9037,6 +9067,10 @@ section.location-map a.map-button {
     bottom: 0;
     top: inherit;
     text-align: center;
+  }
+
+  body.aveda-color main {
+    padding-top: 10%;
   }
 }
 /* nav styling */

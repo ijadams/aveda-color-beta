@@ -33,7 +33,14 @@ body {
 main {
 	padding: 5% 0;
 }
-body.aveda-color {}
+
+body.aveda-color {
+	main {
+		@media scren and (max-width:40em) {
+			padding-top: 10%;
+		}
+	}
+}
 
 body.salon-details {background-color: white;}
 body.salon-details main {padding: 5% 0 0 0;}
@@ -121,12 +128,18 @@ table {
 			text-transform: none;
 		}
 	}
+
+	@media only screen and (min-width:768px) {
+		span.bullet {font-size:1.1375rem;}
+	}
+
 	@media only screen and (max-width: 64em) {
 	    background-position: -150px top;
 	    .row {
 	    	h1 { font-size: 4rem; }
 			h2 { font-size: 2.5rem; line-height: 2rem; }
 	    }
+	    span.bullet {font-size:1.1375rem;}
 	}
 	@media only screen and (max-width: 40em) {
 	    padding-bottom: 400px;
@@ -146,6 +159,7 @@ table {
 			h3 { font-size: 1.5rem; }
 			h4 { font-size: 0.9rem; }
 		}
+		span.bullet {font-size:0.8rem;}
 	}
 }
 
@@ -292,8 +306,14 @@ section.location-map {
 	background-repeat: no-repeat;
 	min-height: 45vh;
 	color: $primarycolor;
+
 	.row {
 		padding-top: 10vh;
+	}
+	
+	@media screen and (max-width:40em) {
+		background-position: 33% 50%;
+		.row {padding-top:5vh;}
 	}
 	.hero-text {
 		  position: relative;
@@ -312,6 +332,9 @@ section.location-map {
 		.button {
 			font-size: 1rem;
 			letter-spacing: 1px;
+			@media only screen and (max-width:40em) {
+				margin-top:1rem;
+			}
 		}
 		h1,h2,h4 {
 			line-height: 3rem;
@@ -328,7 +351,8 @@ section.location-map {
 		@media only screen and (max-width: 40.063em) {
 		    padding-bottom: 350px;
 		    background-size: initial;
-		    background-position: 65% 170%;
+		    background-position: 65% 195%;
+		    .button {}
 			#aveda-logo {
 				position: static;
 				padding-top: 20px;
@@ -433,6 +457,9 @@ section.location-map {
 		top: inherit;
 		text-align: center;
 	}
+	body.aveda-color main {
+			padding-top: 10%;
+		}
 }
 
 
