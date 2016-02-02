@@ -8626,9 +8626,12 @@ body.location-details a.button {
 table {
   background: none;
   border: none;
+  margin-bottom: 2rem;
 }
 table tbody tr td, table table tr td {
   padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
 }
 table tr:nth-of-type(even) {
   background-color: transparent !important;
@@ -8636,6 +8639,7 @@ table tr:nth-of-type(even) {
 
 .black {
   color: black;
+  font-size: 18px;
 }
 
 #aveda-logo {
@@ -8675,7 +8679,7 @@ table tr:nth-of-type(even) {
     font-size: 1.1375rem;
   }
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 64.063em) {
   #intro {
     background-position: -150px top;
   }
@@ -8720,6 +8724,9 @@ table tr:nth-of-type(even) {
   #intro .row h4 {
     font-size: 0.9rem;
   }
+  #intro .row h1, #intro .row h2, #intro .row h3 {
+    line-height: 75%;
+  }
   #intro span.bullet {
     font-size: 0.8rem;
   }
@@ -8733,7 +8740,7 @@ table tr:nth-of-type(even) {
   padding: 15px;
   position: relative;
 }
-#introBar h3, #introBar h4 {
+#introBar h3, #introBar h4, #introBar h5 {
   color: #fff;
   line-height: 1.5rem;
 }
@@ -8770,7 +8777,7 @@ table tr:nth-of-type(even) {
 #homeContent p {
   font-size: 0.8rem;
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 64.063em) {
   #homeContent {
     background-position: 160px top;
   }
@@ -8790,12 +8797,18 @@ section.location-details h2 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 section.location-details p a {
   color: #826967;
 }
 section.location-details p a:hover {
   color: #442523;
+}
+section.location-details span.phone {
+  color: #826967;
+  font-weight: bold;
 }
 
 i.fa-chevron-left {
@@ -8887,7 +8900,7 @@ section.location-map a.map-button {
   color: #826967;
 }
 .interior-hero .row {
-  padding-top: 10vh;
+  padding-top: 7vh;
 }
 @media screen and (max-width: 40em) {
   .interior-hero {
@@ -8901,7 +8914,8 @@ section.location-map a.map-button {
   position: relative;
 }
 .interior-hero .hero-text h1, .interior-hero .hero-text h2, .interior-hero .hero-text h4 {
-  color: #ebe4e1 !important;
+  color: white !important;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 64.063em) {
   .interior-hero .hero-text h1, .interior-hero .hero-text h2 {
@@ -8914,8 +8928,10 @@ section.location-map a.map-button {
   background-color: #dbe0e4;
 }
 .interior-hero.location .button {
+  margin-top: 1.5rem;
   font-size: 1rem;
   letter-spacing: 1px;
+  padding: 10px 25px;
 }
 @media only screen and (max-width: 40em) {
   .interior-hero.location .button {
@@ -8933,6 +8949,9 @@ section.location-map a.map-button {
 .interior-hero.location h2 {
   font-size: 3rem;
   margin-left: 0;
+}
+.interior-hero.location h4 {
+  line-height: 2.5rem;
 }
 .interior-hero.location:before, .interior-hero.location:after {
   display: none;
@@ -9043,7 +9062,7 @@ section.location-map a.map-button {
   background: #f6f6f6 !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 64.063em) {
   table {
     margin: 0 auto;
     margin-bottom: 2rem;

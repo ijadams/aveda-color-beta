@@ -86,7 +86,8 @@ body.location-details a.button {
 table {
 	background:none;
 	border:none;
-	tbody tr td, table tr td {padding-left:0;}
+	margin-bottom:2rem;
+	tbody tr td, table tr td {padding-left:0;padding-bottom:0;padding-right:20px;}
 
 	tr:nth-of-type(even) {
     background-color: transparent !important;
@@ -95,7 +96,7 @@ table {
 
 
 
-.black {color: black;}
+.black {color: black;font-size:18px;}
 
 #aveda-logo {
 	position: absolute;
@@ -133,7 +134,7 @@ table {
 		span.bullet {font-size:1.1375rem;}
 	}
 
-	@media only screen and (max-width: 64em) {
+	@media only screen and (max-width: 64.063em) {
 	    background-position: -150px top;
 	    .row {
 	    	h1 { font-size: 4rem; }
@@ -158,6 +159,7 @@ table {
 			h2 { font-size: 2rem; line-height: 1rem; }
 			h3 { font-size: 1.5rem; }
 			h4 { font-size: 0.9rem; }
+			h1,h2, h3 {line-height:75%;}
 		}
 		span.bullet {font-size:0.8rem;}
 	}
@@ -170,11 +172,11 @@ table {
 	text-align: center;
 	padding: 15px;
 	position: relative;
-	h3, h4 {
+	h3, h4, h5 {
 		color: #fff;
 		line-height: 1.5rem;
 	}
-	h4 { text-transform: none; }
+	h4 { text-transform: none;}
 	&:after {
 	    content: '';
 	    position: absolute;
@@ -199,7 +201,7 @@ table {
 	h3 { margin: 50px 0 20px; }
 	h5 { margin-bottom: 20px; }
 	p { font-size: 0.8rem; }
-	@media only screen and (max-width: 64em) {
+	@media only screen and (max-width: 64.063em) {
 		background-position: 160px top;
 	}
 	@media only screen and (max-width: 40em) {
@@ -216,11 +218,14 @@ section.location-details {
 		text-transform: uppercase;
 		font-weight: 500;
 		font-size: 1.5em;
+		margin-top: 0.5rem;
+		margin-bottom: 0;
 	}
 	p a {
 		color: $primarycolor;
 		&:hover {color:$dark_red;}
 	}
+	span.phone {color:$primarycolor;font-weight:bold;}
 }
 
 
@@ -308,9 +313,9 @@ section.location-map {
 	color: $primarycolor;
 
 	.row {
-		padding-top: 10vh;
+		padding-top: 7vh;
 	}
-	
+
 	@media screen and (max-width:40em) {
 		background-position: 33% 50%;
 		.row {padding-top:5vh;}
@@ -318,7 +323,8 @@ section.location-map {
 	.hero-text {
 		  position: relative;
 		  h1, h2, h4 {
-		  	color: #ebe4e1 !important;
+		  	color: white !important;
+		  	margin-bottom: 0;
 		  }
 		  @media only screen and (min-width: 64.063em) {
 		  	h1, h2 {margin-left:-5rem;}
@@ -330,8 +336,10 @@ section.location-map {
 		background-image: url('../images/location-bg.jpg');
 		background-color: $introbg;
 		.button {
+			margin-top: 1.5rem;
 			font-size: 1rem;
 			letter-spacing: 1px;
+			padding:10px 25px;
 			@media only screen and (max-width:40em) {
 				margin-top:1rem;
 			}
@@ -342,6 +350,7 @@ section.location-map {
 		}
 		h1 { font-size: 4rem; margin-left: 0; }
 		h2 { font-size: 3rem; margin-left: 0; }
+		h4 {line-height:2.5rem;}
 		&:before,&:after { display: none; }
 		@media only screen and (max-width: 64.063em) {
 			h1 { font-size: 3rem; line-height: 3rem; }
@@ -397,6 +406,7 @@ section.location-map {
 			color: $asbestos;
 		}
 	}
+
 	&.location .row {
 		margin: 0 auto;
 		li .block {
@@ -439,7 +449,7 @@ section.location-map {
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:64.063em) {
 	table {margin: 0 auto;margin-bottom:2rem;}
 
 }
