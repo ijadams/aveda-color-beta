@@ -9205,6 +9205,11 @@ section.location-map a.map-button {
 }
 
 @media screen and (max-width: 768px) {
+  #D3cpWidget {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
   .left-off-canvas-menu {
     width: 100%;
   }
