@@ -8585,6 +8585,12 @@ body.overview #map {
   width: 100%;
 }
 
+body.overview small {
+  display: block;
+  padding-bottom: 10px;
+  color: white !important;
+}
+
 body.home {
   font: 100% ff-meta-web-pro, sans-serif;
   color: #826967 !important;
@@ -8726,12 +8732,13 @@ table tr:nth-of-type(even) {
     text-align: center;
   }
   #intro .row {
-    padding-top: 0;
+    padding-top: 2rem;
     text-align: center;
   }
   #intro .row h1 {
     font-size: 3rem;
     line-height: 3rem;
+    padding-top: 2rem;
   }
   #intro .row h2 {
     font-size: 2rem;
@@ -8780,6 +8787,10 @@ table tr:nth-of-type(even) {
   border-top: 20px solid #826967;
   clear: both;
   z-index: 99999;
+}
+
+#aveda {
+  padding-top: 50px;
 }
 
 #homeContent {
