@@ -8603,6 +8603,38 @@ body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home 
 body.home a.button {
   min-width: 200px;
 }
+body.home .interior-hero:after, body.home .interior-hero:before {
+  display: none;
+}
+body.home .which-color h3, body.home .which-color h5 {
+  color: #826967;
+  line-height: 0.9em;
+}
+body.home .which-color h3 {
+  font-size: 58px;
+}
+body.home .which-color h5 {
+  font-size: 30px;
+}
+@media only screen and (max-width: 64.063em) {
+  body.home .which-color h3 {
+    font-size: 44px;
+  }
+  body.home .which-color h5 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  body.home .which-color h3 {
+    font-size: 38px;
+  }
+  body.home .which-color h5 {
+    font-size: 23px;
+  }
+}
+body.home .interior-hero {
+  background-image: url(../images/home-header.jpg);
+}
 
 .fluid {
   max-width: 100%;
@@ -8669,19 +8701,15 @@ table tr:nth-of-type(even) {
 
 #aveda-logo {
   position: absolute;
-  top: 3%;
-  right: 5%;
+  top: 5%;
+  left: 5%;
 }
 
 #intro {
   min-height: 500px;
-  background-image: url(../images/intro-bg.jpg);
-  background-color: #dbe0e4;
+  background-color: #bdc3c7;
   background-repeat: no-repeat;
   background-position: top left;
-}
-#intro .row {
-  padding-top: 130px;
 }
 #intro .row h1 {
   font-size: 5.5rem;
@@ -8703,6 +8731,9 @@ table tr:nth-of-type(even) {
   #intro span.bullet {
     font-size: 1.1375rem;
   }
+  #intro #aveda {
+    padding: 30px;
+  }
 }
 @media only screen and (max-width: 64.063em) {
   #intro {
@@ -8718,6 +8749,9 @@ table tr:nth-of-type(even) {
   #intro span.bullet {
     font-size: 1.1375rem;
   }
+  #intro #aveda {
+    padding-top: 20px;
+  }
 }
 @media only screen and (max-width: 40em) {
   #intro {
@@ -8732,13 +8766,13 @@ table tr:nth-of-type(even) {
     text-align: center;
   }
   #intro .row {
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
   }
   #intro .row h1 {
     font-size: 3rem;
     line-height: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   #intro .row h2 {
     font-size: 2rem;
@@ -8766,12 +8800,15 @@ table tr:nth-of-type(even) {
   padding: 15px;
   position: relative;
 }
+#introBar img {
+  padding-bottom: 10px;
+}
 #introBar h3, #introBar h4, #introBar h5 {
   color: #fff;
   line-height: 1.5rem;
 }
 #introBar h4 {
-  text-transform: none;
+  text-transform: uppercase;
 }
 #introBar:after {
   content: '';
@@ -8789,24 +8826,27 @@ table tr:nth-of-type(even) {
   z-index: 99999;
 }
 
-#aveda {
-  padding-top: 50px;
-}
-
 #homeContent {
   background: #f6f6f6 url("../images/home-bg.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   padding: 0 0 100px;
 }
-#homeContent h3 {
-  margin: 50px 0 20px;
-}
-#homeContent h5 {
-  margin-bottom: 20px;
+#homeContent .row {
+  padding-top: 4rem;
 }
 #homeContent p {
   font-size: 0.8rem;
+}
+#homeContent h5 {
+  margin-bottom: 1.5rem;
+}
+#homeContent h3 {
+  padding: 1rem 0;
+  line-height: 0.9em;
+}
+#homeContent span.select-salons {
+  font-size: 0.8em;
 }
 @media only screen and (max-width: 64.063em) {
   #homeContent {
@@ -8952,12 +8992,12 @@ section.location-map a.map-button {
 
 /* AVEDA COLOR STYLING */
 .interior-hero {
-  background-image: url(../images/interior-header-solid.jpg);
+  background-image: url(../images/interior-header.jpg);
   position: relative;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 45vh;
+  min-height: 55vh;
   color: #826967;
 }
 .interior-hero .row {
@@ -8968,10 +9008,18 @@ section.location-map a.map-button {
 }
 @media screen and (max-width: 40em) {
   .interior-hero {
-    background-position: 33% 50%;
+    background-position: 50% 50%;
   }
   .interior-hero .row {
     padding-top: 5vh;
+  }
+  .interior-hero .which-color h1 {
+    font-size: 63px;
+    line-height: 0.85em;
+  }
+  .interior-hero .which-color h2 {
+    font-size: 23px;
+    text-indent: 5px;
   }
 }
 .interior-hero .hero-text {
@@ -9035,9 +9083,7 @@ section.location-map a.map-button {
 }
 @media only screen and (max-width: 40.063em) {
   .interior-hero.location {
-    padding-bottom: 350px;
-    background-size: initial;
-    background-position: 65% 195%;
+    background-size: cover;
   }
   .interior-hero.location #aveda-logo {
     position: static;
@@ -9126,6 +9172,15 @@ section.location-map a.map-button {
   background: #f6f6f6 !important;
 }
 
+.show-for-tween-only {
+  display: none;
+}
+
+@media screen and (max-width: 52em) {
+  .show-for-tween-only {
+    display: block;
+  }
+}
 @media screen and (max-width: 64.063em) {
   table {
     margin: 0 auto;
@@ -9149,7 +9204,8 @@ section.location-map a.map-button {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
+    left: 5%;
+    top: 5%;
     right: 0;
     bottom: 0;
     top: inherit;

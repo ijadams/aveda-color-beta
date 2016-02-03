@@ -64,6 +64,24 @@ body.home {
 		color: $primarycolor;
 	}
 	a.button {min-width:200px;}
+	.interior-hero:after, .interior-hero:before {display:none;}
+	.which-color {
+		h3, h5 {color:$primarycolor;line-height:0.9em;}
+		h3 {font-size:58px;}
+		h5 {font-size:30px;}
+
+		@media only screen and (max-width: 64.063em) {
+			h3 {font-size:44px;}
+			h5 {font-size:30px;}		
+		}
+		@media only screen and (max-width: 40em) {
+			h3 {font-size:38px;}
+			h5 {font-size:23px;}		
+		}
+	}
+	.interior-hero {
+	background-image: url(../images/home-header.jpg);
+	}
 }
 
 .fluid { max-width: 100%; }
@@ -115,18 +133,16 @@ table {
 
 #aveda-logo {
 	position: absolute;
-	top: 3%;
-	right: 5%;
+	top: 5%;
+	left: 5%;
 }
 
 #intro {
 	min-height: 500px;
-	background-image: url(../images/intro-bg.jpg);
-	background-color: $introbg;
+	background-color: #bdc3c7;
 	background-repeat: no-repeat;
 	background-position: top left;
 	.row {
-		padding-top: 130px;
 		h1 {
 			font-size: 5.5rem;
 			line-height: 3.75rem;
@@ -147,6 +163,7 @@ table {
 
 	@media only screen and (min-width:768px) {
 		span.bullet {font-size:1.1375rem;}
+		#aveda {padding:30px;}
 	}
 
 	@media only screen and (max-width: 64.063em) {
@@ -156,6 +173,8 @@ table {
 			h2 { font-size: 2.5rem; line-height: 2rem; }
 	    }
 	    span.bullet {font-size:1.1375rem;}
+	   	#aveda {padding-top:20px;}
+
 	}
 	@media only screen and (max-width: 40em) {
 	    padding-bottom: 400px;
@@ -168,9 +187,9 @@ table {
 			text-align: center;
 		}
 		.row {
-			padding-top: 2rem;
+			padding-top: 1rem;
 			text-align: center;
-			h1 { font-size: 3rem; line-height: 3rem; padding-top:2rem;}
+			h1 { font-size: 3rem; line-height: 3rem; padding-top:1rem;}
 			h2 { font-size: 2rem; line-height: 1rem; }
 			h3 { font-size: 1.5rem; }
 			h4 { font-size: 0.9rem; }
@@ -187,11 +206,12 @@ table {
 	text-align: center;
 	padding: 15px;
 	position: relative;
+	img {padding-bottom:10px;}
 	h3, h4, h5 {
 		color: #fff;
 		line-height: 1.5rem;
 	}
-	h4 { text-transform: none;}
+	h4 { text-transform: uppercase;}
 	&:after {
 	    content: '';
 	    position: absolute;
@@ -209,16 +229,17 @@ table {
 	}
 }
 
-#aveda {padding-top:50px;}
 
 #homeContent {
 	background: $bodybg url('../images/home-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: right top;
 	padding: 0 0 100px;
-	h3 { margin: 50px 0 20px; }
-	h5 { margin-bottom: 20px; }
+	.row {padding-top: 4rem;}
 	p { font-size: 0.8rem; }
+	h5 {margin-bottom:1.5rem;}
+	h3 {padding: 1rem 0;line-height:0.9em;}
+	span.select-salons {font-size:0.8em;}
 	@media only screen and (max-width: 64.063em) {
 		background-position: 160px top;
 	}
@@ -353,12 +374,12 @@ section.location-map {
 /* AVEDA COLOR STYLING */
 
 .interior-hero {
-	background-image: url(../images/interior-header-solid.jpg);
+	background-image: url(../images/interior-header.jpg);
 	position: relative;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-height: 45vh;
+	min-height: 55vh;
 	color: $primarycolor;
 
 	.row {
@@ -368,8 +389,10 @@ section.location-map {
 	.which-color {text-transform:uppercase;}
 
 	@media screen and (max-width:40em) {
-		background-position: 33% 50%;
+		background-position: 50% 50%;
 		.row {padding-top:5vh;}
+		.which-color h1 {font-size:63px;line-height:0.85em;}
+		.which-color h2 {font-size:23px;text-indent:5px;}
 	}
 	.hero-text {
 		  position: relative;
@@ -409,9 +432,7 @@ section.location-map {
 			h4 { line-height: normal; }
 		}
 		@media only screen and (max-width: 40.063em) {
-		    padding-bottom: 350px;
-		    background-size: initial;
-		    background-position: 65% 195%;
+		    background-size: cover;
 		    .button {}
 			#aveda-logo {
 				position: static;
@@ -498,8 +519,11 @@ section.location-map {
 		}
 	}
 }
+.show-for-tween-only {display:none;}
 
-
+@media screen and (max-width:52em) {
+.show-for-tween-only {display:block;}
+}
 
 @media screen and (max-width:64.063em) {
 	table {margin: 0 auto;margin-bottom:2rem;}
@@ -513,7 +537,8 @@ section.location-map {
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
-		left: 0;
+		left: 5%;
+		top:5%;
 		right: 0;
 		bottom: 0;
 		top: inherit;
