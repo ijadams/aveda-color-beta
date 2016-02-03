@@ -8755,7 +8755,7 @@ table tr:nth-of-type(even) {
 }
 @media only screen and (max-width: 40em) {
   #intro {
-    padding-bottom: 400px;
+    padding-bottom: 4rem;
     background-size: 150%;
     background-position: 5% 300px;
     min-height: 0;
