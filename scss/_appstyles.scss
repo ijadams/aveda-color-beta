@@ -364,7 +364,7 @@ section.location-map {
 	.hero-text {
 		  position: relative;
 		  h1, h2, h4 {
-		  	color: white !important;
+		  	color: #ecf0f1 !important;
 		  	margin-bottom: 0;
 		  }
 		  @media only screen and (min-width: 64.063em) {
@@ -435,6 +435,9 @@ section.location-map {
 	}
 }
 
+
+
+
 .content {
 	h2, h4 {color: $primarycolor;text-transform: uppercase;}
 	p {color: $asbestos;}
@@ -485,8 +488,6 @@ section.location-map {
 		}
 	}
 }
-
-
 
 
 

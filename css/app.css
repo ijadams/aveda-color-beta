@@ -8964,7 +8964,7 @@ section.location-map a.map-button {
   position: relative;
 }
 .interior-hero .hero-text h1, .interior-hero .hero-text h2, .interior-hero .hero-text h4 {
-  color: white !important;
+  color: #ecf0f1 !important;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 64.063em) {

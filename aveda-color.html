@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aveda Color Beta Test</title>
+    <title>Hair Color Offer</title>
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
@@ -180,17 +180,22 @@
     
 
     <script type="text/javascript">
-    $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        pagerCustom:'#bx-pager'
-      });
-    });
 
-    $(function() {
-      $(".left-off-canvas-toggle, .exit-off-canvas").click(function() {
-            $('#locations i').toggleClass("rotated");
-        });
-    });
+      var i =0; 
+      var images = ['../images/interior-header-2.jpg','../images/interior-header-3.jpg','../images/interior-header.jpg'];
+      var image = $('.interior-hero');
+                    //Initial Background image setup
+      image.css('background-image', '../images/interior-header.jpg');
+                    //Change image at regular intervals
+      setInterval(function(){   
+       image.fadeOut(1000, function () {
+       image.css('background-image', 'url(' + images [i++] +')');
+       image.fadeIn(500);
+       });
+       if(i == images.length)
+        i = 0;
+      }, 5000);            
+
     </script>
   </body>
 </html>
