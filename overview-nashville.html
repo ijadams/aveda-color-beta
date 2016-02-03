@@ -17,12 +17,14 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css">
+
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDaxNVwZh5HMTSEMmc5jV2waqncK2sdej0&sensor=false&extension=.js'></script> 
 
     <script src="https://use.typekit.net/pnl6lsa.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   </head>
-  <body class="aveda-color">
+  <body class="aveda-color overview">
    <div class="off-canvas-wrap" data-offcanvas>
         <div class="inner-wrap">
             <!-- main content goes here -->
@@ -32,11 +34,13 @@
                 </div>
                 <div class="row">
                     <div class="hero-text small-12 small-center small-text-center medium-12 large-6 medium-left medium-text-left columns">
+                        <!--
                         <h4>Find a salon below and book your</h4>  
                         <h2>FREE INTRODUCTORY</h2>
                         <h1>COLOR PACKAGE</h1>
                         <h4>(a $55+ value)</h4>   
-                        <a href="aveda-color.html" class="button">WHY AVEDA COLOR?</a>             
+                        <a href="aveda-color.html" class="button">WHY AVEDA COLOR?</a> -->
+                        <h2>Choose your favorite<br> Nashville salon</h2>
                     </div>
                 </div>
             </section>
@@ -45,7 +49,10 @@
                 <h4>CHOOSE YOUR NEW FAVORITE SALON:</h4>
             </div>
 
+            <div id="map"></div>
+
             <main>
+
                 <section class="content location">
                     <ul class="row small-block-grid-1 medium-block-grid-2 large-block-grid-3">
                       <li>
@@ -156,6 +163,9 @@
                 </section>
             </main>
 
+            <footer>
+            </footer>
+
         <!-- close the off-canvas menu -->
         <a class="exit-off-canvas"></a>
 
@@ -192,20 +202,8 @@
     <script src="js/app.js"></script>
     <!-- endbuild -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        pagerCustom:'#bx-pager'
-      });
-    });
-
-    $(function() {
-      $(".left-off-canvas-toggle, .exit-off-canvas").click(function() {
-            $('#locations i').toggleClass("rotated");
-        });
-    });
-    </script>
+    <script src="js/libs/map-nashville.js"></script>
   </body>
 </html>

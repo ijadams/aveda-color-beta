@@ -17,7 +17,9 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css">
+
+
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDaxNVwZh5HMTSEMmc5jV2waqncK2sdej0&sensor=false&extension=.js'></script> 
 
     <script src="https://use.typekit.net/pnl6lsa.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -44,6 +46,8 @@
             <div id="introBar">
                 <h4>CHOOSE YOUR NEW FAVORITE SALON:</h4>
             </div>
+
+            <div id="map"></div>
 
             <main>
                 <section class="content location">
@@ -165,21 +169,8 @@
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
     <!-- endbuild -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        pagerCustom:'#bx-pager'
-      });
-    });
+    <script src="js/libs/map-nola.js"></script>
 
-    $(function() {
-      $(".left-off-canvas-toggle, .exit-off-canvas").click(function() {
-            $('#locations i').toggleClass("rotated");
-        });
-    });
-    </script>
   </body>
 </html>

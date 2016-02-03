@@ -35,6 +35,10 @@ main {
 }
 
 body.aveda-color {
+	    #map {
+            height: 380px;
+            width: 100%;
+        }
 	main {
 		@media scren and (max-width:40em) {
 			padding-top: 10%;
@@ -44,7 +48,7 @@ body.aveda-color {
 
 body.salon-details {background-color: white;}
 body.salon-details main {padding: 5% 0 0 0;}
-
+body.overview #map {height: 380px;width: 100%;}
 body.home {
 	font: 100% $fontstack;
 	color: $primarycolor !important;
@@ -53,6 +57,7 @@ body.home {
 		font-family: "ff-meta-web-pro";
 		color: $primarycolor;
 	}
+	a.button {min-width:200px;}
 }
 
 .fluid { max-width: 100%; }
@@ -61,7 +66,9 @@ ul {list-style: none;margin: 0;}
 
 li {display: inline-block;}
 
-ul.locations li:first-child {margin-right: 0.5rem;}
+ul.locations {
+	li:first-child {margin-right: 0.5rem;}
+}
 
 a.button {
 	font-family: $fontstack;
@@ -78,6 +85,8 @@ a.button {
     }
 }
 
+i.fa.fa-star, i.fa.fa-star-o, i.fa.fa-star-half, i.fa.fa-star-half-o  {color:#f1c40f !important;}
+
 body.location-details a.button {
 	font-size: 1;
 	letter-spacing:0;
@@ -88,7 +97,7 @@ table {
 	border:none;
 	margin-bottom:2rem;
 	tbody tr td, table tr td {padding-left:0;padding-bottom:0;padding-right:20px;}
-
+	td:nth-child(even) {padding-right:0;}
 	tr:nth-of-type(even) {
     background-color: transparent !important;
 	}
@@ -144,8 +153,8 @@ table {
 	}
 	@media only screen and (max-width: 40em) {
 	    padding-bottom: 400px;
-	    background-size: initial;
-	    background-position: 17% 300px;
+	    background-size: 150%;
+	    background-position: 5% 300px;
 		min-height: 0;
 		#aveda-logo {
 			position: static;
@@ -190,6 +199,7 @@ table {
 	    border-right: 20px solid transparent;
 	    border-top: 20px solid $primarycolor;
 	    clear: both;
+	    z-index: 99999;
 	}
 }
 
@@ -295,10 +305,41 @@ section.location-map {
 
 
 
+#map {
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+        line-height: 115%;
+    }
+    a.map-button {
+    	background: $primarycolor;
+    	width: 130px;
+    	text-align: center;
+    	padding: 5px 10px;
+    	color: white;
+    	margin-top: 10px;
+    	float: left;
+    }
+}
+
+
+
+
 .reviews {
+
 	h2 {color: $primarycolor;padding-bottom: 1rem;}
 	h3 {color: $primarycolor;}
-	i {font-size: 3em;}
+	i {font-size: 2.7em;}
+
+	@media screen and (max-width:40em) {
+		text-align: center;
+		h3 {margin-bottom:1.5rem;}
+		p {text-align: left !important;}
+	}
 }
 
 /* AVEDA COLOR STYLING */
@@ -327,7 +368,7 @@ section.location-map {
 		  	margin-bottom: 0;
 		  }
 		  @media only screen and (min-width: 64.063em) {
-		  	h1, h2 {margin-left:-5rem;}
+		  	.which-color {margin-left:-5rem;}
 		  }
 	}
 
@@ -451,7 +492,7 @@ section.location-map {
 
 @media screen and (max-width:64.063em) {
 	table {margin: 0 auto;margin-bottom:2rem;}
-
+	.top-bar .name a#locations {width:100%;}
 }
 
 @media screen and (max-width: 480px) {

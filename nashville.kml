@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Aveda Locations Nashville</name>
+		<description><![CDATA[Aveda salon and spas Nashville, TN.]]></description>
+		<Folder>
+			<name>Nashville Locations</name>
+			<Placemark>
+				<name>True Blue Salon</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.812367,36.144506,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>William Edge Salon and Day Spa</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.8047739,36.1509874,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Jón Alan Salon Bellevue</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.91980000000001,36.075876,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Jón Alan Salon Cool Springs</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.80773449999998,35.9515699,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Origina</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.82499100000001,35.9464198,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>ONU Salon</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.44457399999999,35.858465,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Tangerine</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-86.43021169999997,35.86079850000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Studio 59 Aveda Salon &amp; Spa</name>
+				<styleUrl>#icon-503-795046-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-85.16604789999997,35.04747719999999,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Style id='icon-503-795046-nodesc-normal'>
+			<IconStyle>
+				<color>ff465079</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='icon-503-795046-nodesc-highlight'>
+			<IconStyle>
+				<color>ff465079</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='icon-503-795046-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#icon-503-795046-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#icon-503-795046-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>

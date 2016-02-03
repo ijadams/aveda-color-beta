@@ -8562,6 +8562,10 @@ main {
   padding: 5% 0;
 }
 
+body.aveda-color #map {
+  height: 380px;
+  width: 100%;
+}
 @media scren and (max-width: 40em) {
   body.aveda-color main {
     padding-top: 10%;
@@ -8576,6 +8580,11 @@ body.salon-details main {
   padding: 5% 0 0 0;
 }
 
+body.overview #map {
+  height: 380px;
+  width: 100%;
+}
+
 body.home {
   font: 100% ff-meta-web-pro, sans-serif;
   color: #826967 !important;
@@ -8584,6 +8593,9 @@ body.home {
 body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home p {
   font-family: "ff-meta-web-pro";
   color: #826967;
+}
+body.home a.button {
+  min-width: 200px;
 }
 
 .fluid {
@@ -8618,6 +8630,10 @@ a.button:hover {
   background-color: #442523 !important;
 }
 
+i.fa.fa-star, i.fa.fa-star-o, i.fa.fa-star-half, i.fa.fa-star-half-o {
+  color: #f1c40f !important;
+}
+
 body.location-details a.button {
   font-size: 1;
   letter-spacing: 0;
@@ -8632,6 +8648,9 @@ table tbody tr td, table table tr td {
   padding-left: 0;
   padding-bottom: 0;
   padding-right: 20px;
+}
+table td:nth-child(even) {
+  padding-right: 0;
 }
 table tr:nth-of-type(even) {
   background-color: transparent !important;
@@ -8697,8 +8716,8 @@ table tr:nth-of-type(even) {
 @media only screen and (max-width: 40em) {
   #intro {
     padding-bottom: 400px;
-    background-size: initial;
-    background-position: 17% 300px;
+    background-size: 150%;
+    background-position: 5% 300px;
     min-height: 0;
   }
   #intro #aveda-logo {
@@ -8760,6 +8779,7 @@ table tr:nth-of-type(even) {
   border-right: 20px solid transparent;
   border-top: 20px solid #826967;
   clear: both;
+  z-index: 99999;
 }
 
 #homeContent {
@@ -8878,6 +8898,25 @@ section.location-map a.map-button {
   float: right;
 }
 
+#map .gm-style-iw * {
+  display: block;
+  width: 100%;
+}
+#map .gm-style-iw h4, #map .gm-style-iw p {
+  margin: 0;
+  padding: 0;
+  line-height: 115%;
+}
+#map a.map-button {
+  background: #826967;
+  width: 130px;
+  text-align: center;
+  padding: 5px 10px;
+  color: white;
+  margin-top: 10px;
+  float: left;
+}
+
 .reviews h2 {
   color: #826967;
   padding-bottom: 1rem;
@@ -8886,7 +8925,18 @@ section.location-map a.map-button {
   color: #826967;
 }
 .reviews i {
-  font-size: 3em;
+  font-size: 2.7em;
+}
+@media screen and (max-width: 40em) {
+  .reviews {
+    text-align: center;
+  }
+  .reviews h3 {
+    margin-bottom: 1.5rem;
+  }
+  .reviews p {
+    text-align: left !important;
+  }
 }
 
 /* AVEDA COLOR STYLING */
@@ -8918,7 +8968,7 @@ section.location-map a.map-button {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 64.063em) {
-  .interior-hero .hero-text h1, .interior-hero .hero-text h2 {
+  .interior-hero .hero-text .which-color {
     margin-left: -5rem;
   }
 }
@@ -9066,6 +9116,10 @@ section.location-map a.map-button {
   table {
     margin: 0 auto;
     margin-bottom: 2rem;
+  }
+
+  .top-bar .name a#locations {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
