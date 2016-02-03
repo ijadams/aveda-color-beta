@@ -345,7 +345,7 @@ section.location-map {
 /* AVEDA COLOR STYLING */
 
 .interior-hero {
-	background-image: url(../images/interior-header.jpg);
+	background-image: url(../images/interior-header-solid.jpg);
 	position: relative;
 	background-size: cover;
 	background-position: center center;
@@ -356,6 +356,8 @@ section.location-map {
 	.row {
 		padding-top: 7vh;
 	}
+
+	.which-color {text-transform:uppercase;}
 
 	@media screen and (max-width:40em) {
 		background-position: 33% 50%;

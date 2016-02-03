@@ -8941,7 +8941,7 @@ section.location-map a.map-button {
 
 /* AVEDA COLOR STYLING */
 .interior-hero {
-  background-image: url(../images/interior-header.jpg);
+  background-image: url(../images/interior-header-solid.jpg);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -8951,6 +8951,9 @@ section.location-map a.map-button {
 }
 .interior-hero .row {
   padding-top: 7vh;
+}
+.interior-hero .which-color {
+  text-transform: uppercase;
 }
 @media screen and (max-width: 40em) {
   .interior-hero {
