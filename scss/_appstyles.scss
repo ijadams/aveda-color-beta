@@ -84,6 +84,57 @@ body.home {
 	}
 }
 
+#color-slider {
+	position: relative;
+	background:none;
+	background-image:none;
+	.hero-text {
+		position: absolute;
+		z-index: 99;
+		top: 17%;
+		left: 15%;
+		@media screen and (max-width:64.063em) {
+			left: 12%;
+		}
+		@media screen and (max-width:40em) {
+			top: 20%;
+			left: 7%;
+		}
+		.which-color h1, .which-color h2 {color:gray;}
+		.which-color.white h1, .which-color.white h2 {color:white;}
+		.which-color.clouds h1, .which-color.clouds h2 {color:#ecf0f1;}
+	}
+	.bx-wrapper {
+		position: absolute;
+		box-shadow:none;
+		border:0;
+		z-index: 10;
+		height: 100%;
+		width: 100%;
+		ul {height:100% !important;}
+		li {
+			height: 100% !important;
+			width: 100% !important;
+			background-size:cover !important;
+		}
+
+		.bx-viewport {
+			height: 100% !important;
+			width: 100%;
+		}
+			@media only screen and (min-width: 64.063em) {
+				li:nth-child(2) {
+					background-position: 50% 35% !important;
+				}
+			}
+			@media only screen and (max-width: 64.063em) {
+				li {background-position: center !important;}
+			}
+
+	}
+
+}
+
 .fluid { max-width: 100%; }
 
 ul {list-style: none;margin: 0;}
@@ -397,7 +448,6 @@ section.location-map {
 	.hero-text {
 		  position: relative;
 		  h1, h2, h4 {
-		  	color: #ecf0f1 !important;
 		  	margin-bottom: 0;
 		  }
 		  @media only screen and (min-width: 64.063em) {
@@ -407,7 +457,7 @@ section.location-map {
 
 	&.location {
 		min-height: 55vh;
-		background-image: url('../images/location-bg.jpg');
+		background-image: url('../images/interior-header-blonde.jpg');
 		background-color: $introbg;
 		.button {
 			margin-top: 1.5rem;
@@ -452,6 +502,7 @@ section.location-map {
 		border-right: 20px solid transparent;
 		display: block;
 		content:" ";
+		z-index: 999;
 	}
 
 	&:after {
@@ -463,6 +514,7 @@ section.location-map {
 		border-left: 20px solid transparent;
 		display: block;
 		content:" ";
+		z-index: 999;
 	}
 }
 

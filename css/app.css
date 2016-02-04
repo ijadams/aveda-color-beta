@@ -8636,6 +8636,68 @@ body.home .interior-hero {
   background-image: url(../images/home-header.jpg);
 }
 
+#color-slider {
+  position: relative;
+  background: none;
+  background-image: none;
+}
+#color-slider .hero-text {
+  position: absolute;
+  z-index: 99;
+  top: 17%;
+  left: 15%;
+}
+@media screen and (max-width: 64.063em) {
+  #color-slider .hero-text {
+    left: 12%;
+  }
+}
+@media screen and (max-width: 40em) {
+  #color-slider .hero-text {
+    top: 20%;
+    left: 7%;
+  }
+}
+#color-slider .hero-text .which-color h1, #color-slider .hero-text .which-color h2 {
+  color: gray;
+}
+#color-slider .hero-text .which-color.white h1, #color-slider .hero-text .which-color.white h2 {
+  color: white;
+}
+#color-slider .hero-text .which-color.clouds h1, #color-slider .hero-text .which-color.clouds h2 {
+  color: #ecf0f1;
+}
+#color-slider .bx-wrapper {
+  position: absolute;
+  box-shadow: none;
+  border: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+#color-slider .bx-wrapper ul {
+  height: 100% !important;
+}
+#color-slider .bx-wrapper li {
+  height: 100% !important;
+  width: 100% !important;
+  background-size: cover !important;
+}
+#color-slider .bx-wrapper .bx-viewport {
+  height: 100% !important;
+  width: 100%;
+}
+@media only screen and (min-width: 64.063em) {
+  #color-slider .bx-wrapper li:nth-child(2) {
+    background-position: 50% 35% !important;
+  }
+}
+@media only screen and (max-width: 64.063em) {
+  #color-slider .bx-wrapper li {
+    background-position: center !important;
+  }
+}
+
 .fluid {
   max-width: 100%;
 }
@@ -9026,7 +9088,6 @@ section.location-map a.map-button {
   position: relative;
 }
 .interior-hero .hero-text h1, .interior-hero .hero-text h2, .interior-hero .hero-text h4 {
-  color: #ecf0f1 !important;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 64.063em) {
@@ -9036,7 +9097,7 @@ section.location-map a.map-button {
 }
 .interior-hero.location {
   min-height: 55vh;
-  background-image: url("../images/location-bg.jpg");
+  background-image: url("../images/interior-header-blonde.jpg");
   background-color: #dbe0e4;
 }
 .interior-hero.location .button {
@@ -9103,6 +9164,7 @@ section.location-map a.map-button {
   border-right: 20px solid transparent;
   display: block;
   content: " ";
+  z-index: 999;
 }
 .interior-hero:after {
   position: absolute;
@@ -9113,6 +9175,7 @@ section.location-map a.map-button {
   border-left: 20px solid transparent;
   display: block;
   content: " ";
+  z-index: 999;
 }
 
 .content h2, .content h4 {
