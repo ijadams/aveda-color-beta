@@ -8789,6 +8789,9 @@ table tr:nth-of-type(even) {
   font-weight: normal;
   text-transform: none;
 }
+#intro .row h1, #intro .row h2, #intro .row h3, #intro .row h4 {
+  color: #826967 !important;
+}
 @media only screen and (min-width: 768px) {
   #intro span.bullet {
     font-size: 1.1375rem;
