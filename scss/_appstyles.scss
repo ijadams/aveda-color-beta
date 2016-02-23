@@ -100,7 +100,7 @@ body.home {
 			top: 20%;
 			left: 7%;
 		}
-		.which-color h1, .which-color h2 {color:gray;}
+		.which-color h1, .which-color h2 {color: #826967;}
 		.which-color.white h1, .which-color.white h2 {color:white;}
 		.which-color.clouds h1, .which-color.clouds h2 {color:#ecf0f1;}
 	}
@@ -281,6 +281,15 @@ table {
 	}
 }
 
+#overview-benefits  {
+	h1,h2,h3,h4 {
+	color:white !important;
+	}
+
+	h4 {
+	font-size: 1.3375rem;
+	}	
+}
 
 #homeContent {
 	background: $bodybg url('../images/home-bg.jpg');
@@ -342,12 +351,12 @@ i.fa-chevron-left {
 
 /* slider styling */ 
 .bx-wrapper {
-	img {width: 100%;}
 	.bx-controls-direction a {
 		top: inherit;
 		bottom: 5%;
 		top: inherit !important;
 	}
+	img {margin:0 auto;}
 }
 
 div#bx-pager {
@@ -431,7 +440,7 @@ section.location-map {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-height: 55vh;
+	min-height: 65vh;
 	color: $primarycolor;
 
 	.row {
@@ -453,10 +462,13 @@ section.location-map {
 		  }
 		  @media only screen and (min-width: 64.063em) {
 		  	.which-color {margin-left:-5rem;}
+		  		img {margin-left: -5rem;}
+
 		  }
 	}
 
 	&.location {
+		.row {padding-top:5vh;padding-bottom:3rem;}
 		min-height: 55vh;
 		background-image: url('../images/interior-header-blonde.jpg');
 		background-color: $introbg;
@@ -475,7 +487,8 @@ section.location-map {
 		}
 		h1 { font-size: 4rem; margin-left: 0; }
 		h2 { font-size: 3rem; margin-left: 0; }
-		h4 {line-height:2.5rem;}
+		h3 {margin-bottom:0;}
+		h4 {line-height:1.8rem;}
 		&:before,&:after { display: none; }
 		@media only screen and (max-width: 64.063em) {
 			h1 { font-size: 3rem; line-height: 3rem; }
@@ -490,7 +503,11 @@ section.location-map {
 				padding-top: 20px;
 				text-align: center;
 			}
-			.row { padding-top: 0; }
+			.row { padding-top: 0; padding-bottom: 0; }
+		h1 { font-size: 2.7rem; line-height: 2.7rem; }
+			h2 { font-size: 1.6rem; line-height: 1rem; }
+			h3,h4 {    font-size: 1rem!important; }
+
 		}
 	}
 
@@ -563,6 +580,7 @@ section.location-map {
 			    padding: 10px 0;
 			    letter-spacing: 0;
 			    color: #fff;
+			    float: left;
 			    &:first-of-type {
 			    	background: $buttonbgalt;
 			    	color: $asbestos;
